@@ -15,7 +15,9 @@ def InputUserData():
 
 @main.route('/map')
 def ShowMap():
-    return render_template('map.html', title='SPK')
+    lat = -7.258206
+    lng = 112.754206
+    return render_template('map.html', title='SPK-Map', lat=lat, lng=lng)
 
 @main.route('/graph')
 def ShowGraph():

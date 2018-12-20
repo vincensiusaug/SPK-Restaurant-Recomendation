@@ -1,7 +1,14 @@
 {% extends "layout.html" %}
 {% block headContent %}
+    <script>
+        let lat = {{ lat }};
+        let lng = {{ lng }};
+    </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script language="javascript" type="text/javascript" src="{{ url_for('static', filename='Scripts/map.js') }}"></script>
 {% endblock headContent %}
 {% block content %}
     <div id ="map" style="height: 600px" >
+    </div>
+    <h1>{{ lat }}</h1>
 {% endblock %}
