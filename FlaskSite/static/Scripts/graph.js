@@ -1,10 +1,11 @@
 
-let rank = ['mcd', 'kfc', 'a&w'];
+let rank = ['MCD', 'KFC', 'A&W'];
 let percent = [0.6, 0.3, 0.1];
 let y_location;
 let size = [];
 let sizeAnimation = [];
 let speed = 0.01;
+let spacing = 10;
 
 
 function setup() {
@@ -14,7 +15,7 @@ function setup() {
         size.push(width*percent[i]);
         sizeAnimation.push(0);
     }
-
+    console.log(height/rank.length-spacing*2);
 }
 
 function draw() {
@@ -24,9 +25,10 @@ function draw() {
         if(sizeAnimation[i]>size[i]){
             sizeAnimation[i] = size[i];
         }
-    }
-    for(let i=0; i<rank.length; ++i){
         fill(129, 206, 15);
-        rect(0, i*y_location, sizeAnimation[i], height/rank.length);
+        rect(spacing, i*y_location+spacing, sizeAnimation[i], height/rank.length-spacing*2);
+        fill(0);
+        textSize((height/rank.length-spacing*2)/10);
+        text(rank[i], spacing+sizeAnimation[i]/2, i*y_location+height/(rank.length*2));
     }
 }
