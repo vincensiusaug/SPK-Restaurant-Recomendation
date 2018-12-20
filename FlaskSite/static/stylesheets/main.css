@@ -1,0 +1,266 @@
+/* roboto-mono-regular - latin */
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@font-face {
+  font-family: 'lucida_macnormal';
+  src: url('lucida_mac-webfont.woff2') format('woff2'),
+       url('lucida_mac-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+html {
+  height: 80%;
+}
+body {
+  min-height: 80%;
+  font-family: 'lucida_macnormal' Arial, Helvetica, sans-serif;
+  background: #fafafa;
+  color: #6d6d6d;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #555555;
+}
+
+
+
+.bg-steel {
+  background-color: #7a7a7a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #226fb3;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 80px;
+  width: 80px;
+  margin-right: 16px;
+}
+
+.article-img-big {
+  height: 15em;
+  width: 16em;
+  display: block;
+  margin: auto;
+}
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.small-img {
+  height: 40px;
+  width: 40px;
+}
+
+/* .layout-img {
+  height: 5px;
+  width: 5px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+} */
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  left:0px;
+  bottom:0px;
+  height:50px;
+  width:100%;
+  padding-top: 20px;
+  color: #8d8d8d;
+}
+
+.inline {
+  display: inline;
+}
+
+.chat {
+  list-style: none;
+  background: none;
+  margin: 0;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height:600px;
+  overflow:auto;
+  border-radius: 5px;
+  border: 2px solid #c2c2c2;
+}
+
+.chat li {
+  padding: 0.5rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.other .msg {
+  order: 1;
+  border-radius: 2px 20px 20px 20px;
+  box-shadow: -1px 2px 0px #D4D4D4;
+  border: 2px solid #8d8d8d;
+}
+
+.self {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.self .msg {
+  order: 1;
+  border-radius: 20px 2px 20px 20px;
+  box-shadow: 1px 2px 0px #D4D4D4;
+  border: 2px solid #8d8d8d;
+}
+
+.msg {
+  background: white;
+  min-width: 50px;
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 2px;
+  word-wrap: break-word;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
+}
+
+.msg p {
+  font-size: 0.8rem;
+  margin: 0 0 0.2rem 0;
+  color: rgb(65, 65, 65);
+}
+
+.msg time {
+  font-size: 0.7rem;
+  color: #ccc;
+  margin-top: 3px;
+  float: right;
+  cursor: default;
+}
+.msg time:before{
+  content:"\f017";
+  color: #ddd;
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.msg .sender {
+  font-size: 0.7rem;
+  color: #ccc;
+  margin-top: 3px;
+  float: right;
+  cursor: default;
+  margin-left: 4px;
+}
+
+#notification-circle-red {
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+  background: rgb(255, 113, 113);
+}
+#notification-circle-green {
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+  background: rgb(123, 247, 112);
+}
+
+#chat-box-input {
+  width:90%;
+  margin: auto;
+  text-align:left;
+}
+
+#chat-box-send {
+  width:20%;
+  text-align:right;
+}
+
+#chat-bottom {
+  width:100%;
+}
+
+.bottom {
+  position: relative;
+  bottom: 0;
+}
+
+.center {
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+canvas {
+  padding: 0;
+  margin: auto;
+  display: block;
+  width: 800px;
+}
+
+.no-moncrot {
+  word-wrap: break-word;
+}
+
+.shopping-cart {
+  width: 750px;
+  height: 423px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+ 
+  display: flex;
+  flex-direction: column;
+}
