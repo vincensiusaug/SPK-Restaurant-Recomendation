@@ -1,7 +1,7 @@
 var map;
 var geocoder;
 function InitializeMap() {
-
+  var name = rest;
   var latlng = new google.maps.LatLng(lat, lng);
   var myOptions =
   {
@@ -14,7 +14,7 @@ function InitializeMap() {
   var marker = new google.maps.Marker({
     position: latlng,
     map: map,
-    title: 'Hello World!'
+    title: name
   });
 
 }

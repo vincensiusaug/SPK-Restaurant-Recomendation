@@ -3,6 +3,7 @@
     <script>
         let lat = {{ lat }};
         let lng = {{ lng }};
+        let rest = "{{ name }}";
     </script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script language="javascript" type="text/javascript" src="{{ url_for('static', filename='Scripts/map.js') }}"></script>
@@ -10,5 +11,4 @@
 {% block content %}
     <div id ="map" style="height: 600px" >
     </div>
-    <h1>{{ lat }}</h1>
 {% endblock %}
