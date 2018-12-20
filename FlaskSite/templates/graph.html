@@ -3,7 +3,19 @@
     <script src="{{ url_for('static', filename='Scripts/libraries/p5.js') }}"></script>
     <script src="{{ url_for('static', filename='Scripts/libraries/p5.dom.js') }}"></script>
     <script src="{{ url_for('static', filename='Scripts/libraries/p5.sound.js') }}"></script>
-    <script language="javascript" type="text/javascript" src="{{ url_for('static', filename='Scripts/graph.js') }}"></script>
+    <script>
+        let rank = [];
+        {% for name in rest_name %}
+        rank.push("{{ name }}");
+        {% endfor %}
+        
+        let percent = [];
+        {% for percent in rest_percent %}
+        percent.push("{{ percent }}");
+        {% endfor %}
+    </script>
+    <script language="javascript" type="text/javascript" src="{{ url_for('static', filename='Scripts/graph.js') }}">
+    </script>
 {% endblock headContent %}
 {% block content %}
 {% endblock %}

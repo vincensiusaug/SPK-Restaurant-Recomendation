@@ -19,4 +19,6 @@ def ShowMap():
 
 @main.route('/graph')
 def ShowGraph():
-    return render_template('graph.html', title='SPK')
+    restaurant_name = ['MCD', 'KFC', 'AW']
+    restaurant_percent = [0.3, 0.3, 0.1]
+    return render_template('graph.html', title='SPK', rest_name=restaurant_name, rest_percent=restaurant_percent)

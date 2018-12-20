@@ -1,12 +1,11 @@
 
-let rank = ['MCD', 'KFC', 'A&W'];
-let percent = [0.6, 0.3, 0.1];
+// let rank = name;
+// let percent = [0.6, 0.3, 0.1];
 let y_location;
 let size = [];
 let sizeAnimation = [];
 let speed = 0.01;
 let spacing = 10;
-
 
 function setup() {
     createCanvas(1200, 600);
@@ -15,7 +14,7 @@ function setup() {
         size.push(width*percent[i]);
         sizeAnimation.push(0);
     }
-    console.log(height/rank.length-spacing*2);
+    console.log(name);
 }
 
 function draw() {
