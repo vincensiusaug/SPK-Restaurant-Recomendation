@@ -2,7 +2,9 @@ import os
 from sqlalchemy import or_
 from flask import url_for, render_template, flash, redirect, request, abort, Blueprint
 from FlaskSite import app, db
+import Utils
 
+recommendationName, recommendationScore = Utils.recommendation()
 main = Blueprint('main', __name__)
 
 @main.route('/')
@@ -22,6 +24,6 @@ def ShowMap():
 
 @main.route('/graph')
 def ShowGraph():
-    restaurant_name = ['MCD', 'KFC', 'AW']
-    restaurant_percent = [0.3, 0.3, 0.1]
+    restaurant_name = recommendationName
+    restaurant_percent = recommendationScore
     return render_template('graph.html', title='SPK', rest_name=restaurant_name, rest_percent=restaurant_percent)
